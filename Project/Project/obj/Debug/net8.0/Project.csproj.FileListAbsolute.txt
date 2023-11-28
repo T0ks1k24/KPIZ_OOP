@@ -1,0 +1,15 @@
+O:\Programing\Laboratory-OOP\Project\Project\bin\Debug\net8.0\Project.exe
+O:\Programing\Laboratory-OOP\Project\Project\bin\Debug\net8.0\Project.deps.json
+O:\Programing\Laboratory-OOP\Project\Project\bin\Debug\net8.0\Project.runtimeconfig.json
+O:\Programing\Laboratory-OOP\Project\Project\bin\Debug\net8.0\Project.dll
+O:\Programing\Laboratory-OOP\Project\Project\bin\Debug\net8.0\Project.pdb
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.AssemblyInfoInputs.cache
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.AssemblyInfo.cs
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.csproj.CoreCompileInputs.cache
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.sourcelink.json
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.dll
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\refint\Project.dll
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.pdb
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\Project.genruntimeconfig.cache
+O:\Programing\Laboratory-OOP\Project\Project\obj\Debug\net8.0\ref\Project.dll
