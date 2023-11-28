@@ -6,21 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class Exam : IDateAndCopy
+    class Exam
     {
-        protected int Mark;
-        protected string Subject;
-        public DateTime Date {  get; set; }
-        public Exam(int mark, string subject, DateTime date) 
-        {
-            Mark = mark;
-            Subject = subject;
-            Date = date;
-        }
-        public object DeepCopy()
-        {
-            return new Exam(Mark, Subject, Date);
-        }
+
 
     }
 }
