@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "O:\\Programing\\Laboratory-OOP\\Project\\Project\\Project.csproj": {}
+    "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\Project.csproj": {}
   },
   "projects": {
-    "O:\\Programing\\Laboratory-OOP\\Project\\Project\\Project.csproj": {
+    "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "O:\\Programing\\Laboratory-OOP\\Project\\Project\\Project.csproj",
+        "projectUniqueName": "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "O:\\Programing\\Laboratory-OOP\\Project\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\Toksik\\.nuget\\packages\\",
-        "outputPath": "O:\\Programing\\Laboratory-OOP\\Project\\Project\\obj\\",
+        "projectPath": "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Toksik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
