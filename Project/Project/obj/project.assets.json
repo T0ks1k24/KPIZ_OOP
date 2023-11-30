@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Юра\\.nuget\\packages\\": {}
+    "C:\\Users\\Toksik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\Project.csproj",
+      "projectUniqueName": "O:\\Programing\\Laboratory-OOP\\Project\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\Project.csproj",
-      "packagesPath": "C:\\Users\\Юра\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Юра\\Documents\\GitHub\\Laboratory-OOP\\Project\\Project\\obj\\",
+      "projectPath": "O:\\Programing\\Laboratory-OOP\\Project\\Project\\Project.csproj",
+      "packagesPath": "C:\\Users\\Toksik\\.nuget\\packages\\",
+      "outputPath": "O:\\Programing\\Laboratory-OOP\\Project\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Юра\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Toksik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
