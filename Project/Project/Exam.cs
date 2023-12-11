@@ -8,16 +8,11 @@ namespace Project
 {
     class Exam : IDateAndCopy
     {
-        public string Subject;
-        public int Grade;
         public DateTime ExamDate;
+        public string Subject { get; set; }
+        public int Score { get; set; }
 
-        public Exam(string subject, int grade, DateTime examDate)
-        {
-            Subject = subject;
-            Grade = grade;
-            ExamDate = examDate;
-        }
+
 
         public DateTime Date
         {
@@ -27,8 +22,11 @@ namespace Project
 
         public object DeepCopy()
         {
-            // Виконати глибоку копію об'єкту
-            return new Exam(Subject, Grade, ExamDate);
+            return new Exam { Subject = this.Subject, Score = this.Score };
         }
+
+
+
+
     }
 }

@@ -11,6 +11,8 @@ namespace Project
         // Властивості класу
         public string SubjectName { get; set; }
         public bool Passed { get; set; }
+        public string Subject { get; internal set; }
+        public int Score { get; internal set; }
 
         // Конструктор з параметрами
         public Test(string subjectName, bool passed)
@@ -30,6 +32,11 @@ namespace Project
         public override string ToString()
         {
             return $"Предмет: {SubjectName}, Зданий залік: {Passed}";
+        }
+
+        public object DeepCopy()
+        {
+            return new Test { Subject = this.Subject, Score = this.Score };
         }
     }
 

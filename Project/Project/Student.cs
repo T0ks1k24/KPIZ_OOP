@@ -11,17 +11,17 @@ namespace Project
     {
         protected string University;
         protected int StudentID;
-        protected string EducationForm;
-        protected int GroupNumber;
-        protected ArrayList Tests;
-        protected ArrayList Exams;
+        private string Education;
+        private int GroupNumber;
+        private ArrayList Tests;
+        private ArrayList Exams;
 
-        public Student(string firstName, string lastName, DateTime birthDate, string university, int studentID, string educationForm, int groupNumber)
+        public Student(string firstName, string lastName, DateTime birthDate, string university, int studentID, string education, int groupNumber)
             : base(firstName, lastName, birthDate)
         {
             University = university;
             StudentID = studentID;
-            EducationForm = educationForm;
+            Education = education;
             GroupNumber = groupNumber;
             Tests = new ArrayList();
             Exams = new ArrayList();
@@ -40,7 +40,7 @@ namespace Project
 
         public override object DeepCopy()
         {
-            Student copiedStudent = new Student(FirstName, LastName, BirthDate, University, StudentID, EducationForm, GroupNumber);
+            Student copiedStudent = new Student(FirstName, LastName, BirthDate, University, StudentID, Education, GroupNumber);
 
             // Copy tests
             foreach (Test test in Tests)
