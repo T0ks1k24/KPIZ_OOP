@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace Project
     {
         protected string University;
         protected int StudentID;
+        protected string EducationForm;
+        protected int GroupNumber;
         protected ArrayList Tests;
         protected ArrayList Exams;
 
@@ -18,39 +21,35 @@ namespace Project
         {
             University = university;
             StudentID = studentID;
-            this.educationForm = educationForm;
-            this.groupNumber = groupNumber;
-            tests = new ArrayList();
-            exams = new ArrayList();
-
-        public override object DeepCopy()
-        {
-            // Виконати глибоку копію об'єкту
-            return new Student(FirstName, LastName, BirthDate, University, StudentID);
+            EducationForm = educationForm;
+            GroupNumber = groupNumber;
+            Tests = new ArrayList();
+            Exams = new ArrayList();
         }
+
 
         public void AddTest(Test test)
         {
-            tests.Add(test);
+            Tests.Add(test);
         }
 
         public void AddExam(Exam exam)
         {
-            exams.Add(exam);
+            Exams.Add(exam);
         }
 
         public override object DeepCopy()
         {
-            Student copiedStudent = new Student(FirstName, LastName, BirthDate, University, StudentID, educationForm, groupNumber);
+            Student copiedStudent = new Student(FirstName, LastName, BirthDate, University, StudentID, EducationForm, GroupNumber);
 
             // Copy tests
-            foreach (Test test in tests)
+            foreach (Test test in Tests)
             {
                 copiedStudent.AddTest((Test)test.DeepCopy());
             }
 
             // Copy exams
-            foreach (Exam exam in exams)
+            foreach (Exam exam in Exams)
             {
                 copiedStudent.AddExam((Exam)exam.DeepCopy());
             }
