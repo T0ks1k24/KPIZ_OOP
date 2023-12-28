@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,26 +7,16 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class Exam : IDateAndCopy
+    class Exam : Test
     {
-        public DateTime ExamDate;
-        public string Subject { get; set; }
-        public int Score { get; set; }
-
-
-
-        public DateTime Date
+        public int Mark { get; set; }
+        public Exam(string nameSubject, bool passed, int Mark)
         {
-            get { return ExamDate; }
-            set { ExamDate = value; }
+            this.Mark = Mark;
+            this.nameSubject = nameSubject;
+            this.passed = passed;
         }
-
-        public object DeepCopy()
-        {
-            return new Exam { Subject = this.Subject, Score = this.Score };
-        }
-
-
+        public Exam() { }
 
 
     }

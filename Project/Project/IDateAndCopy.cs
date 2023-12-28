@@ -8,8 +8,8 @@ namespace Project
 {
     interface IDateAndCopy
     {
-        object DeepCopy();
-        DateTime Date { get; set; }
+        public object DeepCopy();
+        public DateTime Date { get; set; }
     }
 
 }

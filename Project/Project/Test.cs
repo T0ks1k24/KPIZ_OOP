@@ -8,36 +8,27 @@ namespace Project
 {
     class Test
     {
-        // Властивості класу
-        public string SubjectName { get; set; }
-        public bool Passed { get; set; }
-        public string Subject { get; internal set; }
-        public int Score { get; internal set; }
+        public string nameSubject { get; set; }
+        public bool passed { get; set; }
 
-        // Конструктор з параметрами
-        public Test(string subjectName, bool passed)
+        public Test(string nameSubject, bool passed)
         {
-            SubjectName = subjectName;
-            Passed = passed;
+            this.nameSubject = nameSubject;
+            this.passed = passed;
         }
 
-        // Конструктор без параметрів (зі значеннями за умовчанням)
         public Test()
         {
-            SubjectName = "Невідомий предмет";
-            Passed = false;
+            nameSubject = "DefaultSubject";
+            passed = false;
         }
 
-        // Перевантажений метод ToString()
-        public override string ToString()
+        public virtual string ToString()
         {
-            return $"Предмет: {SubjectName}, Зданий залік: {Passed}";
+            return $"Subject: {nameSubject}, Passed: {passed}";
         }
 
-        public object DeepCopy()
-        {
-            return new Test { Subject = this.Subject, Score = this.Score };
-        }
+
+
     }
-
 }
