@@ -59,12 +59,12 @@ namespace Project
 
         public override string ToString()
         {
-            return $"Student: {PersonData}, Education: {education}, Group: {groupNum}, Exams Count: {examsList.Count}, Tests Count: {testsList.Count}";
+            return $"Student: {PersonData.FirstName} {PersonData.LastName}, Birthdate: {PersonData.BirthDate.ToShortDateString()}, Education: {education}, Group: {groupNum}, Exams Count: {examsList.Count}, Tests Count: {testsList.Count}";
         }
 
         public virtual string ToShortString()
         {
-            return $"Student: {PersonData}, Education: {education}, Group: {groupNum}, Average Mark: {AvgMark:f2}";
+            return $"Student: {PersonData.FirstName} {PersonData.LastName}, Birthdate: {PersonData.BirthDate.ToShortDateString()}, Education: {education}, Group: {groupNum}, Exams Count: {examsList.Count}, Tests Count: {testsList.Count}";
         }
 
         public override object DeepCopy()

@@ -8,12 +8,12 @@ namespace Project
 {
     class Person : IDateAndCopy
     {
-
         protected string firstName;
         protected string lastName;
         protected DateTime birthDate;
 
         public DateTime Date { get; set; }
+
         public Person(string firstName, string lastName, DateTime birthDate)
         {
             this.firstName = firstName;
@@ -21,22 +21,37 @@ namespace Project
             this.birthDate = birthDate;
         }
 
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public DateTime BirthDate { get; set; }
+        public string FirstName
+        {
+            get { return firstName; }
+            set { firstName = value; }
+        }
+
+        public string LastName
+        {
+            get { return lastName; }
+            set { lastName = value; }
+        }
+
+        public DateTime BirthDate
+        {
+            get { return birthDate; }
+            set { birthDate = value; }
+        }
 
         public override bool Equals(object obj)
         {
-            if (obj is null || ReferenceEquals(this, obj))
+            if (obj is null || GetType() != obj.GetType())
                 return false;
 
-            if (obj is not Person otherPerson)
-                return false;
+            Person otherPerson = (Person)obj;
 
-            return GetHashCode() == otherPerson.GetHashCode();
+            return FirstName == otherPerson.FirstName &&
+                   LastName == otherPerson.LastName &&
+                   BirthDate == otherPerson.BirthDate;
         }
 
-        public int GetHashCode()
+        public override int GetHashCode()
         {
             return HashCode.Combine(firstName, lastName, birthDate);
         }
@@ -46,7 +61,11 @@ namespace Project
             return new Person(firstName, lastName, birthDate);
         }
 
-        public DateTime Data { get => birthDate; set => birthDate = value; }
+        public DateTime Data
+        {
+            get { return birthDate; }
+            set { birthDate = value; }
+        }
 
         public static bool operator ==(Person person1, Person person2)
         {
